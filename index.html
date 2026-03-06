@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Oliver Agency — AI Automation for Modern Business</title>
+    <title>GTO Custom Automation Innovations — AI Systems That Work While You Sleep</title>
     <meta name="description" content="Zero-cost AI systems that work while you sleep. Books, courses, and done-for-you automation services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +28,9 @@
             --success: #10B981;
             --warning: #F59E0B;
             --purple: #8B5CF6;
+            --gto-blue: #0A2F5C;
+            --gto-teal: #00A5B5;
+            --gto-gold: #C9A227;
         }
 
         html { scroll-behavior: smooth; }
@@ -53,7 +56,7 @@
             left: 0;
             right: 0;
             z-index: 100;
-            background: rgba(10, 10, 11, 0.8);
+            background: rgba(10, 10, 11, 0.95);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
         }
@@ -73,24 +76,26 @@
         }
 
         .logo-icon {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--gto-teal) 0%, var(--gto-blue) 100%);
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: 800;
+            font-size: 16px;
+            color: white;
+            letter-spacing: -1px;
         }
 
         .logo-text {
             font-size: 1.1rem;
-            font-weight: 600;
+            font-weight: 700;
             color: var(--light);
         }
 
-        .logo-text span { color: var(--gray-light); font-weight: 400; }
+        .logo-text span { color: var(--gto-teal); font-weight: 400; }
 
         .nav-links {
             display: flex;
@@ -106,7 +111,7 @@
             transition: color 0.2s;
         }
 
-        .nav-links a:hover { color: var(--light); }
+        .nav-links a:hover { color: var(--gto-teal); }
 
         .hero {
             padding: 160px 0 100px;
@@ -122,7 +127,7 @@
             transform: translateX(-50%);
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 165, 181, 0.15) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -147,7 +152,7 @@
             margin-bottom: 32px;
         }
 
-        .hero-badge span { color: var(--accent); font-weight: 600; }
+        .hero-badge span { color: var(--gto-teal); font-weight: 600; }
 
         .hero h1 {
             font-size: 3.5rem;
@@ -158,7 +163,7 @@
         }
 
         .hero h1 .gradient {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
+            background: linear-gradient(135deg, var(--gto-teal) 0%, var(--accent) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -194,14 +199,14 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            background: linear-gradient(135deg, var(--gto-teal) 0%, var(--accent) 100%);
             color: var(--dark);
-            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 165, 181, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 30px rgba(0, 212, 255, 0.4);
+            box-shadow: 0 6px 30px rgba(0, 165, 181, 0.4);
         }
 
         .btn-secondary {
@@ -282,7 +287,7 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 3px;
-            background: linear-gradient(90deg, var(--accent), var(--purple));
+            background: linear-gradient(90deg, var(--gto-teal), var(--accent));
             opacity: 0;
             transition: opacity 0.3s;
         }
@@ -295,15 +300,15 @@
         .product-card:hover::before { opacity: 1; }
 
         .product-card.featured {
-            border-color: rgba(0, 212, 255, 0.3);
-            background: linear-gradient(180deg, rgba(0, 212, 255, 0.05) 0%, var(--dark-card) 100%);
+            border-color: rgba(0, 165, 181, 0.3);
+            background: linear-gradient(180deg, rgba(0, 165, 181, 0.05) 0%, var(--dark-card) 100%);
         }
 
         .product-card.featured::before { opacity: 1; }
 
         .product-badge {
             display: inline-block;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
+            background: linear-gradient(135deg, var(--gto-teal) 0%, var(--accent) 100%);
             color: var(--dark);
             font-size: 0.7rem;
             font-weight: 700;
@@ -316,7 +321,7 @@
 
         .product-type {
             display: inline-block;
-            color: var(--accent);
+            color: var(--gto-teal);
             font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
@@ -388,39 +393,22 @@
         .book-cover {
             width: 200px;
             height: 300px;
-            background: linear-gradient(135deg, var(--dark-elevated) 0%, var(--dark) 100%);
+            background: linear-gradient(135deg, var(--gto-blue) 0%, var(--dark-elevated) 100%);
             border-radius: 8px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--gray);
+            color: var(--gto-teal);
             font-size: 0.8rem;
             text-align: center;
             padding: 20px;
             overflow: hidden;
+            border: 1px solid rgba(0, 165, 181, 0.3);
         }
 
         .book-cover img { width: 100%; height: 100%; object-fit: cover; }
         .book-info { display: flex; flex-direction: column; }
-
-        .prompts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 12px;
-            margin-bottom: 28px;
-        }
-
-        .prompt-pack {
-            background: var(--dark-elevated);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px;
-            text-align: center;
-        }
-
-        .prompt-pack h4 { font-size: 0.85rem; font-weight: 600; margin-bottom: 4px; }
-        .prompt-pack p { font-size: 0.7rem; color: var(--gray); }
 
         .services-grid {
             display: grid;
@@ -447,7 +435,7 @@
         .service-card .price {
             font-size: 1.75rem;
             font-weight: 700;
-            color: var(--warning);
+            color: var(--gto-teal);
             margin-bottom: 12px;
         }
 
@@ -506,7 +494,7 @@
         .stat-card .number {
             font-size: 2.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
+            background: linear-gradient(135deg, var(--gto-teal) 0%, var(--accent) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -559,7 +547,7 @@
             transition: color 0.2s;
         }
 
-        .footer-links a:hover { color: var(--light); }
+        .footer-links a:hover { color: var(--gto-teal); }
 
         @media (max-width: 900px) {
             .about-grid { grid-template-columns: 1fr; }
@@ -583,8 +571,8 @@
         <div class="container">
             <div class="nav-content">
                 <a href="#" class="logo">
-                    <div class="logo-icon">O</div>
-                    <div class="logo-text">The Oliver <span>Agency</span></div>
+                    <div class="logo-icon">GTO</div>
+                    <div class="logo-text">GTO <span>Automation</span></div>
                 </a>
                 <ul class="nav-links">
                     <li><a href="#products">Products</a></li>
@@ -670,7 +658,7 @@
                                     PDF + EPUB formats
                                 </li>
                             </ul>
-                            <a href="https://theoliveragency.gumroad.com/l/ai-automation-blueprint" class="btn btn-primary">Get the Book</a>
+                            <a href="https://gtoliverjr.gumroad.com/l/ptijqz?wanted=true" class="btn btn-primary">Get the Book</a>
                         </div>
                     </div>
 
@@ -697,7 +685,7 @@
                                 Lifetime access + updates
                             </li>
                         </ul>
-                        <a href="https://theoliveragency.gumroad.com/l/ai-automation-fundamentals" class="btn btn-primary">Enroll Now</a>
+                        <a href="https://gtoliverjr.gumroad.com/l/ouujj?wanted=true" class="btn btn-primary">Enroll Now</a>
                     </div>
 
                     <div class="product-card featured">
@@ -723,7 +711,7 @@
                                 Implementation templates included
                             </li>
                         </ul>
-                        <a href="https://theoliveragency.gumroad.com/l/complete-ai-automation-bundle" class="btn btn-primary">Get Everything</a>
+                        <a href="https://gtoliverjr.gumroad.com/l/complete-ai-automation-bundle" class="btn btn-primary">Get Everything</a>
                     </div>
                 </div>
             </div>
@@ -764,7 +752,7 @@
                                 <p>Trainers</p>
                             </div>
                         </div>
-                        <a href="https://theoliveragency.gumroad.com/l/prompt-packs" class="btn btn-secondary">Browse Packs</a>
+                        <a href="https://gtoliverjr.gumroad.com/l/prompt-packs" class="btn btn-secondary">Browse Packs</a>
                     </div>
 
                     <div class="product-card">
@@ -794,7 +782,7 @@
                                 Fitness Trainer prompts (20+)
                             </li>
                         </ul>
-                        <a href="https://theoliveragency.gumroad.com/l/prompt-pack-bundle" class="btn btn-primary">Get All Prompts</a>
+                        <a href="https://gtoliverjr.gumroad.com/l/prompt-pack-bundle" class="btn btn-primary">Get All Prompts</a>
                     </div>
                 </div>
             </div>
@@ -811,28 +799,28 @@
                         <h3>Automation Audit</h3>
                         <div class="price">$295</div>
                         <p>Complete audit of your workflows, tools, and automation opportunities. Written report with prioritized recommendations.</p>
-                        <a href="https://buy.stripe.com/5kQ14o1nB80Xcf06WW1ZS04" class="btn btn-secondary">Book Audit</a>
+                        <a href="#" class="btn btn-secondary">Book Audit</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Quick Win Implementation</h3>
                         <div class="price">$995</div>
                         <p>ONE complete automation built for you. Email, calendar, leads, content, or research. 30-day support included.</p>
-                        <a href="https://buy.stripe.com/6oU28s5DR3KHbaW4OO1ZS02" class="btn btn-secondary">Get Quick Win</a>
+                        <a href="#" class="btn btn-secondary">Get Quick Win</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Business Automation Suite</h3>
                         <div class="price">$2,995</div>
                         <p>Complete automation overhaul. 5-7 custom automations. Email, calendar, leads, content, onboarding. 90-day support.</p>
-                        <a href="https://buy.stripe.com/dRmeVe5DR3KH6UGbdc1ZS05" class="btn btn-secondary">Get Suite</a>
+                        <a href="#" class="btn btn-secondary">Get Suite</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Monthly Retainer</h3>
                         <div class="price">$495<small>/mo</small></div>
                         <p>Ongoing automation support. Monthly optimization, new automations, priority support, quarterly strategy.</p>
-                        <a href="https://buy.stripe.com/6oU14o9U7chd6UGgxw1ZS06" class="btn btn-secondary">Start Retainer</a>
+                        <a href="#" class="btn btn-secondary">Start Retainer</a>
                     </div>
                 </div>
             </div>
@@ -844,7 +832,7 @@
                     <div class="about-text">
                         <h2>Built by George Oliver Jr.</h2>
                         <p>I'm a former chef turned automation specialist. After years in manufacturing, I pivoted to building AI systems that <strong>actually work</strong>.</p>
-                        <p>The Oliver Agency is built on one principle: <strong>automation-first</strong>. Every product and service is designed to run without you.</p>
+                        <p><strong>GTO Custom Automation Innovations</strong> is built on one principle: <strong>automation-first</strong>. Every product and service is designed to run without you.</p>
                         <p>No fluff. No theory. Just systems that deliver.</p>
                     </div>
                     <div class="stats-grid">
@@ -905,15 +893,15 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <div class="logo-icon">O</div>
-                        <div class="logo-text">The Oliver <span>Agency</span></div>
+                        <div class="logo-icon">GTO</div>
+                        <div class="logo-text">GTO <span>Automation</span></div>
                     </a>
                     <p>Family Over Everything</p>
                 </div>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms</a>
-                    <a href="mailto:hello@theoliveragency.com">Contact</a>
+                    <a href="mailto:hello@gtoautomation.com">Contact</a>
                 </div>
             </div>
         </div>
